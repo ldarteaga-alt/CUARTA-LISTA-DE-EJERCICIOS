@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lista4"
+version = "0.1.0"
+description = "Solución modular de la cuarta lista de Machine Learning"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "ipykernel"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
